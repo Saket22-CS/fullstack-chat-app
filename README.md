@@ -213,5 +213,3 @@ This project is licensed under the [MIT License](LICENSE).
 * 💼 [LinkedIn](https://linkedin.com/in/saket-chaudhary22)
 * 💻 [GitHub](https://github.com/Saket22-CS)
 * ✉️ [saketrishu64821@gmail.com](mailto:saketrishu64821@gmail.com)
-
-```
