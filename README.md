@@ -62,24 +62,34 @@ Chatty is a full-stack real-time chat application built with the MERN stack, enh
 
 ```
 
-/frontend
-/src
-/components
-/pages
-/store
-tailwind.config.js
+Chatty/
+├── backend/                    # Express.js backend server
+│   ├── src/
+│   │   ├── controllers/        # Logic for routes (auth, messages, user)
+│   │   ├── models/             # Mongoose models (User, Message)
+│   │   ├── routes/             # Route definitions (authRoutes, messageRoutes)
+│   │   ├── lib/                # Cloudinary config and utility functions
+│   │   └── middleware/         # JWT auth middleware (optional)
+│   ├── index.js                # Entry point for Express app
+│   └── .env                    # Environment variables (MongoDB URI, JWT secret, etc.)
 
-/backend
-/src
-/controllers
-/models
-/routes
-/lib
-index.js
+├── frontend/                   # React + Vite front-end
+│   ├── src/
+│   │   ├── components/         # Reusable UI components (Navbar, ChatBox, etc.)
+│   │   ├── pages/              # Route-specific pages (Login, Signup, Chat, Profile)
+│   │   ├── store/              # Zustand state stores (auth, theme, chat)
+│   │   ├── App.jsx             # Main App component
+│   │   └── main.jsx            # React DOM entry point
+│   ├── tailwind.config.js      # Tailwind CSS configuration
+│   └── index.html              # HTML template
 
-/assets/screens/   <-- (add UI screenshots here)
-.env
-package.json (root)
+├── assets/
+│   └── screens/                # Screenshots for README.md
+
+├── package.json                # Root scripts for build & deployment
+├── README.md                   # Project documentation
+└── .gitignore                  # Files to ignore in Git
+
 
 ````
 
